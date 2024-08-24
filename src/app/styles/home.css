@@ -1,0 +1,43 @@
+/* styles/home.css */
+
+.home-container {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+  }
+  
+  .gif-search-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .gif-search-container input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .gif-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  
+  .gif-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
