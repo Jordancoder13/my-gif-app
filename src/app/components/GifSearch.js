@@ -1,8 +1,8 @@
-// components/GifSearch.js
 'use client';
 
 import { useState } from 'react';
 import axios from 'axios';
+import Image from 'next/image'; // Import Image from next/image
 
 const GIPHY_API_KEY = 'GlVGYHkr3WSBnllca54iNt0yFbjz7L65';
 
@@ -35,7 +35,13 @@ const GifSearch = () => {
       <button onClick={searchGifs}>Search</button>
       <div>
         {gifs.map((gif) => (
-          <img key={gif.id} src={gif.images.fixed_height.url} alt={gif.title} />
+          <Image
+            key={gif.id}
+            src={gif.images.fixed_height.url}
+            alt={gif.title}
+            width={gif.images.fixed_height.width}
+            height={gif.images.fixed_height.height}
+          />
         ))}
       </div>
     </div>
